@@ -8,15 +8,21 @@
     <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="11" cy="11" r="1.25" fill="#c7f52b"/></pattern>
     <mask id="fade"><rect width="1200" height="230" fill="url(#dotsFade)"/></mask>
     <clipPath id="card"><rect x="7" y="7" width="1186" height="216" rx="28"/></clipPath>
+    <filter id="neon" x="-.3" y="-.3" width="1.6" height="1.6"><feGaussianBlur stdDeviation="2.2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <style>
+    .neon-edge { animation: orbit 9s linear infinite; }
+    .button-glow { animation: glow 3.8s ease-in-out infinite; }
+    @keyframes orbit { to { stroke-dashoffset:-1000; } }
+    @keyframes glow { 0%,100% { opacity:.35; } 50% { opacity:.85; } }
     .particles { animation: breathe 5.5s ease-in-out infinite; }
     .signal { animation: signal 3.8s ease-in-out infinite; }
     @keyframes breathe { 0%,100% { opacity:.38; transform:translateY(0); } 50% { opacity:.68; transform:translateY(-2px); } }
     @keyframes signal { 0%,100% { opacity:.55; } 50% { opacity:1; } }
-    @media (prefers-reduced-motion:reduce) { .particles,.signal { animation:none; } }
+    @media (prefers-reduced-motion:reduce) { .particles,.signal,.neon-edge,.button-glow { animation:none; } }
   </style>
   <rect x="7" y="7" width="1186" height="216" rx="28" fill="url(#surface)" stroke="url(#edge)" stroke-width="1.5"/>
+  <rect class="neon-edge" x="7" y="7" width="1186" height="216" rx="28" fill="none" stroke="#c7f52b" stroke-width="1.6" pathLength="1000" stroke-dasharray="90 910" filter="url(#neon)" opacity=".7"/>
   <g clip-path="url(#card)"><g mask="url(#fade)"><rect class="particles" width="1200" height="234" fill="url(#dots)" opacity=".38"/></g></g>
   <rect x="954" y="28" width="200" height="29" rx="14.5" fill="#263124" stroke="#435331"/>
   <circle class="signal" cx="970" cy="42.5" r="3" fill="#c7f52b"/>
@@ -25,6 +31,7 @@
   <text x="1050" y="124" text-anchor="start" direction="rtl" unicode-bidi="plaintext" font-family="Tajawal,Tahoma,Arial,sans-serif" font-size="49" font-weight="700" fill="#edf2e8">نَزّل اللي يعجبك.</text>
   <text x="1154" y="183" text-anchor="start" direction="rtl" unicode-bidi="plaintext" font-family="Tajawal,Tahoma,Arial,sans-serif" font-size="23" fill="#a7b4a3">حمّل الفيديو والصوت والصور من الرابط أو المشاركة.</text>
   <rect x="42" y="91" width="274" height="68" rx="20" fill="#c7f52b"/>
+  <rect class="button-glow" x="42" y="91" width="274" height="68" rx="20" fill="none" stroke="#c7f52b" stroke-width="2.2" filter="url(#neon)" opacity=".35"/>
   <text x="286" y="134" text-anchor="end" font-family="Tajawal,Tahoma,Arial,sans-serif" font-size="25" font-weight="700" fill="#202b16">حمّل التطبيق</text>
   <circle cx="80" cy="125" r="21" fill="#202b16"/>
   <path d="M80 114v16m-6-6 6 6 6-6m-14 9v4h16v-4" fill="none" stroke="#c7f52b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
