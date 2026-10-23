@@ -1,8 +1,8 @@
-<table>
-  <tr>
-    <td align="center" width="800">
-      <h2><a href="https://mhmdslahhjazi.pages.dev/">Mohamed Salah Portfolio</a></h2>
-      <p><a href="https://mhmdslahhjazi.pages.dev/">شوف البورتفوليو ↗</a></p>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://mhmdslahhjazi.pages.dev/">
+    <img src="assets/portfolio-header.svg" alt="Mohamed Salah Portfolio — Media Buying, WordPress and Tracking — Explore portfolio" width="100%">
+  </a>
+  <a href="https://mhmdslahhjazi.pages.dev/">
+    <img src="assets/portfolio-preview.png" alt="صورة من الصفحة الرئيسية لبورتفوليو محمد صلاح — اضغط لزيارة الموقع" width="100%">
+  </a>
+</p>

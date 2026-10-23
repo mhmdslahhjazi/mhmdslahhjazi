@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="172" viewBox="0 0 1200 172">
+  <rect x="8" y="12" width="1180" height="150" rx="32" fill="#252d27"/>
+  <rect x="14" y="5" width="1180" height="150" rx="32" fill="#f6f3ec" stroke="#252d27" stroke-width="2"/>
+  <rect x="42" y="30" width="84" height="28" rx="14" fill="#c6d9b8"/>
+  <text x="84" y="49" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#252d27">PORTFOLIO</text>
+  <text x="42" y="102" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#252d27">Mohamed Salah Portfolio</text>
+  <text x="44" y="132" font-family="Arial,sans-serif" font-size="16" fill="#667064">Media Buying · WordPress · Tracking</text>
+  <rect x="936" y="65" width="224" height="55" rx="27" fill="#252d27"/>
+  <rect x="939" y="59" width="224" height="55" rx="27" fill="#f2b493" stroke="#252d27" stroke-width="2"/>
+  <text x="1051" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#252d27">Explore portfolio ↗</text>
+</svg>
